@@ -1,0 +1,16 @@
+skill_id,skill_name,category
+1,Excel,Data Analysis
+2,SQL,Databases
+3,Python,Programming
+4,Pandas,Data Science
+5,Statistics,Mathematics
+6,Data Visualization,Data Science
+7,Power BI,Business Intelligence
+8,Machine Learning,Artificial Intelligence
+9,Deep Learning,Artificial Intelligence
+10,HTML & CSS,Web Development
+11,JavaScript,Web Development
+12,React,Web Development
+13,Network Security,Cybersecurity
+14,Ethical Hacking,Cybersecurity
+15,Git & GitHub,Software Engineering

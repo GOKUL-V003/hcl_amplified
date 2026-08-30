@@ -1,0 +1,16 @@
+project_id,title,description,skill_id,difficulty,estimated_hours,tags
+1,Sales Dashboard & Profitability Analysis,Build an interactive Excel spreadsheet dashboard analyzing retail sales trends profit margins and product performance.,1,2,10.0,excel dashboard sales-analysis
+2,E-Commerce Database Querying & Customer Segmentation,Write complex SQL joins and window functions to extract customer purchasing metrics and cohort retention rates.,2,2,12.0,sql database querying ecommerce
+3,Automated Data Scraping & ETL Pipeline,Build a Python script that scrapes financial news data cleans unstructured text and saves structured CSVs.,3,2,15.0,python web-scraping etl automation
+4,Exploratory Data Analysis on COVID-19 Dataset,Clean visualize and compute summary stats on global health data using Pandas and Seaborn.,4,2,14.0,pandas eda data-cleaning seaborn
+5,A/B Testing & Statistical Hypothesis Evaluation,Perform two-sample t-tests and chi-square independence tests on website conversion funnel data.,5,3,12.0,statistics hypothesis-testing ab-testing
+6,Interactive Financial Market Tracker Dashboard,Design an interactive Plotly dashboard showcasing stock price movements dynamic sliders and tooltips.,6,3,16.0,visualization plotly financial dashboard
+7,Executive HR Analytics & Retention Dashboard,Construct an end-to-end Power BI report tracking employee churn department metrics and interactive slicers.,7,2,15.0,powerbi hr-analytics dashboards
+8,Customer Churn Prediction Classification Model,Build train and evaluate a Scikit-Learn Random Forest model to predict subscriber churn with 85%+ accuracy.,8,3,25.0,machine-learning classification churn scikit-learn
+9,Image Classification with Convolutional Neural Network,Train a PyTorch CNN model on CIFAR-10 dataset achieving high accuracy with data augmentation.,9,4,30.0,deep-learning cnn computer-vision pytorch
+10,Responsive Developer Portfolio Website,Create a semantic HTML5 CSS3 flexbox and grid website highlighting personal coding projects and resume.,10,1,10.0,web-development html css portfolio
+11,Interactive Task Management Web Application,Build a dynamic JavaScript web app with local storage filtering searching and DOM drag-and-drop.,11,2,15.0,javascript web-app dom dynamic
+12,Modern E-Commerce Storefront with React,Develop a multi-page React single-page application with cart state hooks product filtering and routing.,12,3,25.0,react hooks state-management ecommerce
+13,Network Packet Analyzer & Security Audit Tool,Write a Python network traffic monitoring script using Scapy to detect open ports and suspicious packets.,13,3,20.0,cybersecurity network-security python wireshark
+14,Vulnerability Scanning & Penetration Testing Report,Perform an OWASP security audit on a target test web server and write a professional remediation report.,14,3,20.0,cybersecurity ethical-hacking security-audit
+15,Open-Source Collaboration & Git Workflow Project,Set up a GitHub team repository manage feature branches resolve merge conflicts and write pull request templates.,15,2,8.0,git github open-source pull-request
