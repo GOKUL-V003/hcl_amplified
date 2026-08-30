@@ -108,10 +108,10 @@ class DatabaseManager:
                 cursor.execute(
                     """INSERT INTO users (name, career_goal_id, interests, study_hours_per_week)
                        VALUES (?, ?, ?, ?)""",
-                    ("Alex Morgan", 1, "Data Analysis, Python, SQL, Machine Learning", 12.0)
+                    ("Yash", 1, "Data Analysis, Python, SQL, Machine Learning", 12.0)
                 )
                 user_id = cursor.lastrowid
-                # Seed initial skills for Alex Morgan (Excel=3, Python=2, SQL=1)
+                # Seed initial skills for Yash (Excel=3, Python=2, SQL=1)
                 cursor.execute("INSERT OR REPLACE INTO user_skills (user_id, skill_id, current_level) VALUES (?, ?, ?)", (user_id, 1, 3))
                 cursor.execute("INSERT OR REPLACE INTO user_skills (user_id, skill_id, current_level) VALUES (?, ?, ?)", (user_id, 3, 2))
                 cursor.execute("INSERT OR REPLACE INTO user_skills (user_id, skill_id, current_level) VALUES (?, ?, ?)", (user_id, 2, 1))
@@ -263,7 +263,7 @@ class DatabaseManager:
         with self.get_connection() as conn:
             cursor = conn.cursor()
             cursor.execute(
-                """SELECT lh.*, c.title, c.skill_id, s.skill_name
+                """SELECT lh.*, c.title, c.url, c.skill_id, s.skill_name
                    FROM learning_history lh
                    JOIN courses c ON lh.course_id = c.course_id
                    JOIN skills s ON c.skill_id = s.skill_id
@@ -272,3 +272,17 @@ class DatabaseManager:
                 (user_id,)
             )
             return [dict(r) for r in cursor.fetchall()]
+
+    def delete_learning_history_item(self, history_id: int) -> None:
+        """Delete a single history log entry by history_id."""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM learning_history WHERE history_id = ?", (history_id,))
+            conn.commit()
+
+    def clear_user_learning_history(self, user_id: int) -> None:
+        """Delete all learning history records for a specific user."""
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM learning_history WHERE user_id = ?", (user_id,))
+            conn.commit()

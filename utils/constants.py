@@ -51,3 +51,12 @@ SUPPORTED_CAREERS = [
 
 # Database Path
 DEFAULT_DB_PATH = "database/learning_recommender.db"
+
+# Sample Career Analyzer Prompts for Quick Testing
+SAMPLE_CAREER_PROMPTS = {
+    "Data Analyst": "I am an entry-level graduate with a business background looking to transition into a Data Analyst role. I know basic Excel formulas and have done simple SQL queries, but I have zero experience with Python, Pandas, and statistics. I can dedicate about 12 hours a week to study.",
+    "Data Scientist": "I want to become a professional Data Scientist. I have intermediate programming skills in Python and good foundational statistics, but need to master Machine Learning pipelines, Pandas optimization, and predictive modeling. I have 15 hours per week available.",
+    "AI/ML Engineer": "I am working as a software developer and want to transition to an AI/ML Engineer. I am proficient in Python, Git, and basic ML algorithms, but I need deep learning, PyTorch, and NLP transformers. I can commit 14 hours each week.",
+    "Web Developer": "I am a self-taught beginner aiming to become a Web Developer. I know basic HTML and CSS, but struggle with JavaScript ES6 and React state management. I can study 10 hours a week.",
+    "Cybersecurity Specialist": "I want to switch to a Cybersecurity Analyst position. I have strong computer networking and TCP/IP knowledge, but need hands-on ethical hacking, Wireshark packet analysis, and OWASP vulnerability auditing skills. I can invest 12 hours a week."
+}
